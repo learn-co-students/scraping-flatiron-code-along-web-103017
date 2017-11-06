@@ -31,9 +31,11 @@ class Scraper
     self.get_courses.each do |course|
       new_instance = Course.new
       new_instance.title = course.css("h2").text
-      new_instance.schedule = course.css("em").text
+      new_instance.schedule = course.css(".date").text
       new_instance.description = course.css("p").text
     end
   end
 
 end
+
+Scraper.new.print_courses
