@@ -39,7 +39,6 @@ Now, let's run *just* the `Course` specs by typing `rspec spec/course_spec.rb` i
 
 Looks like we have some methods to define. Let's start with the instance method tests. The test output tells us that we need setters and getters for `title`, `schedule` and `description`. Let's make them `attr_accessors`
 
-```ruby
 class Course
   attr_accessor :title, :schedule, :description
 end
@@ -146,7 +145,7 @@ Scraper.new.get_page
 
 Once your file looks like the code above, run the file with `ruby lib/scraper.rb` in your terminal. Once you hit your binding, type the `doc` variable into the terminal and you should see the HTML document, retrieved for us by Nokogiri and open-uri. You should see something like this:
 
->Note: When you hit the pry, you may end up with a prompt that looks like this `:`. That just means there's a lot of text and you can scroll up and down using the arrow keys. If you need to escape this prompt so you can type in `doc`, then you simply have to press `q` or the `esc` key. 
+>Note: When you hit the pry, you may end up with a prompt that looks like this `:`. That just means there's a lot of text and you can scroll up and down using the arrow keys. If you need to escape this prompt so you can type in `doc`, then you simply have to press `q` or the `esc` key.
 
 ![](http://readme-pics.s3.amazonaws.com/Screen%20Shot%202015-08-20%20at%204.25.06%20PM.png)
 
